@@ -1,0 +1,9 @@
+在要上传的文件夹选中右键选择git bash here
+git init						//git初始化
+git add .					//将该文件夹所有文件加入暂存区
+git status 					//可以查看暂存区状态
+git commit -m "任意字符" 		//将暂存区文件正式提交,first_commit
+//链接github仓库和本地仓库
+git remote add origin https://github.com/mao123-1/tinymall.git  	//https://github.com/mao123-1/tinymall.git为code(仓库)的链接
+git branch -M master
+git push -u origin master
