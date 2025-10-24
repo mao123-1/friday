@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "052747f7-0ede-46da-9e0a-f2cf3dfe222f",
+		"_postman_id": "f9164408-fb92-4f9f-8aba-3d4d389e7fae",
 		"name": "test",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "42963039"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -431,6 +430,331 @@
 			]
 		},
 		{
+			"name": "menu",
+			"item": [
+				{
+					"name": "验证获取树状菜单",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE1NzFjNzcwLWNiNGMtNGI0OS1hYmRhLTc1MDEyOTAwOGI1ZSJ9.ZJrd-OAhMRzt6qOCl7V4bVDqwAwm04jjTyzH14CPlYmKtBUrj-FGMOTdW2x1y30hui6yXJ5E7TZlzYTc7MkDIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/system/menu/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"system",
+								"menu",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "验证获取树状菜单列表接口",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE1NzFjNzcwLWNiNGMtNGI0OS1hYmRhLTc1MDEyOTAwOGI1ZSJ9.ZJrd-OAhMRzt6qOCl7V4bVDqwAwm04jjTyzH14CPlYmKtBUrj-FGMOTdW2x1y30hui6yXJ5E7TZlzYTc7MkDIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/system/menu/treeselect",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"system",
+								"menu",
+								"treeselect"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "验证获取菜单路由接口",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE1NzFjNzcwLWNiNGMtNGI0OS1hYmRhLTc1MDEyOTAwOGI1ZSJ9.ZJrd-OAhMRzt6qOCl7V4bVDqwAwm04jjTyzH14CPlYmKtBUrj-FGMOTdW2x1y30hui6yXJ5E7TZlzYTc7MkDIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/getRouters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getRouters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "验证获取树状菜单列表接口(根据角色id)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE1NzFjNzcwLWNiNGMtNGI0OS1hYmRhLTc1MDEyOTAwOGI1ZSJ9.ZJrd-OAhMRzt6qOCl7V4bVDqwAwm04jjTyzH14CPlYmKtBUrj-FGMOTdW2x1y30hui6yXJ5E7TZlzYTc7MkDIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/system/menu/roleMenuTreeselect/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"system",
+								"menu",
+								"roleMenuTreeselect",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "验证获取详细信息",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE1NzFjNzcwLWNiNGMtNGI0OS1hYmRhLTc1MDEyOTAwOGI1ZSJ9.ZJrd-OAhMRzt6qOCl7V4bVDqwAwm04jjTyzH14CPlYmKtBUrj-FGMOTdW2x1y30hui6yXJ5E7TZlzYTc7MkDIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/system/menu/2000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"system",
+								"menu",
+								"2000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "新增菜单数据",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE1NzFjNzcwLWNiNGMtNGI0OS1hYmRhLTc1MDEyOTAwOGI1ZSJ9.ZJrd-OAhMRzt6qOCl7V4bVDqwAwm04jjTyzH14CPlYmKtBUrj-FGMOTdW2x1y30hui6yXJ5E7TZlzYTc7MkDIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"menuName\": \"系统管理\",\r\n  \"menuType\": \"M\",\r\n  \"parentId\": 0,\r\n  \"orderNum\": 1,\r\n  \"path\": \"/system\",\r\n  \"icon\": \"system\",\r\n  \"isFrame\": 1,\r\n  \"isCache\": 0,\r\n  \"status\": \"0\",\r\n  \"remark\": \"系统配置相关目录\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/system/menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"system",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改菜单数据",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE1NzFjNzcwLWNiNGMtNGI0OS1hYmRhLTc1MDEyOTAwOGI1ZSJ9.ZJrd-OAhMRzt6qOCl7V4bVDqwAwm04jjTyzH14CPlYmKtBUrj-FGMOTdW2x1y30hui6yXJ5E7TZlzYTc7MkDIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"menuId\": 100,\r\n  \"menuName\": \"系统配置管理\",\r\n  \"menuType\": \"M\",\r\n  \"parentId\": 0,\r\n  \"orderNum\": 2,\r\n  \"path\": \"/system/config\",\r\n  \"icon\": \"config\",\r\n  \"status\": \"0\",\r\n  \"remark\": \"系统配置相关目录（更新后）\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/system/menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"system",
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除菜单接口",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImE1NzFjNzcwLWNiNGMtNGI0OS1hYmRhLTc1MDEyOTAwOGI1ZSJ9.ZJrd-OAhMRzt6qOCl7V4bVDqwAwm04jjTyzH14CPlYmKtBUrj-FGMOTdW2x1y30hui6yXJ5E7TZlzYTc7MkDIA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer <token>",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/system/menu/2006",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"system",
+								"menu",
+								"2006"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "login",
 			"request": {
 				"method": "POST",
@@ -481,7 +805,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjIzNjI3MzA2LTlmN2UtNDdlYi05M2E1LTBlY2QxMjBmMTE3NCJ9.LLZgPDA4R8C6QwKlIze-0ywlyw45H-4zZBoQXsrmMpZWLmV-EHmhIkOBmSnvsY1fTAE7DiToisv_TtVhFGoAuA",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjQ0ZDUwMjUzLThkMzctNDE0Ny04OTU1LWE2ZTc1MTVkNTQyZiJ9.tBvKGwdWGmUDEcJtRBngySRsAaXgPkbQ0wXqPOAfC0vcBc0BVLKv1IebyAsxd8blY-AMYjoGgUq8u0e_bWB8Vg",
 							"type": "string"
 						}
 					]
